@@ -11,7 +11,7 @@
  Target Server Version : 80022
  File Encoding         : 65001
 
- Date: 28/03/2021 03:48:16
+ Date: 28/03/2021 05:37:09
 */
 
 SET NAMES utf8mb4;
@@ -109,6 +109,7 @@ CREATE TABLE `tbl_clue`  (
 -- Records of tbl_clue
 -- ----------------------------
 INSERT INTO `tbl_clue` VALUES ('7599986ee6ca41098d998a7c4fb26b0b', '琪琪', '夫人', '40f6cdea0bd34aceb77492a1656d9fb3', '公司', '职位', '邮箱', '0241111111', '123@123.com', '138111111', '虚假线索', '推销电话', '张三', NULL, NULL, NULL, '描述', '纪要', '2021-04-06', '地址');
+INSERT INTO `tbl_clue` VALUES ('c453c84bc281409a91aaf822d617ab8f', '马云', '夫人', '40f6cdea0bd34aceb77492a1656d9fb3', '公司', '职位', '邮箱', '0241111111', '123@123.com', '138111111', '虚假线索', '推销电话', '张三', NULL, NULL, NULL, '描述', '纪要', '2021-04-06', '地址');
 
 -- ----------------------------
 -- Table structure for tbl_clue_activity_relation
@@ -383,7 +384,7 @@ CREATE TABLE `tbl_tran`  (
 -- ----------------------------
 -- Records of tbl_tran
 -- ----------------------------
-INSERT INTO `tbl_tran` VALUES ('5b055a691cab4c40b0d1b87facff57d1', '40f6cdea0bd34aceb77492a1656d9fb3', '666', 'py交易', '2021-03-31', '4f84d6c13c6c47f584c537b988cc7408', '03价值建议', '已有业务', '销售邮件', '0a6355bfa6154f00994667eacbe50148', '0d8a8aff02484910a31a04ddc5e7ce5e', '张三', '2021-03-12 19:16:49', '张三', '2021-03-14 03:11:04', '描述', '纪要', '2021-03-25');
+INSERT INTO `tbl_tran` VALUES ('5b055a691cab4c40b0d1b87facff57d1', '40f6cdea0bd34aceb77492a1656d9fb3', '666', 'py交易', '2021-03-31', '4f84d6c13c6c47f584c537b988cc7408', '04确定决策者', '已有业务', '销售邮件', '0a6355bfa6154f00994667eacbe50148', '0d8a8aff02484910a31a04ddc5e7ce5e', '张三', '2021-03-12 19:16:49', '张三', '2021-03-28 05:36:05', '描述', '纪要', '2021-03-25');
 INSERT INTO `tbl_tran` VALUES ('5f930327017843d99cdd0e62aae7fc43', '40f6cdea0bd34aceb77492a1656d9fb3', '1000', '交易demo', '2021-03-24', '3f8f5c23c31c4a7387aa13d934c5f739', '02需求分析', '已有业务', '广告', '0a6355bfa6154f00994667eacbe50148', '0d8a8aff02484910a31a04ddc5e7ce5e', '张三', '2021-03-13 02:08:59', NULL, NULL, '描述', '纪要', '2021-03-22');
 
 -- ----------------------------
@@ -407,6 +408,7 @@ CREATE TABLE `tbl_tran_history`  (
 INSERT INTO `tbl_tran_history` VALUES ('4618daa9d1ac414fac9e79f93c30153a', '02需求分析', '1000', '2021-03-24', '2021-03-13 02:08:59', '张三', '5f930327017843d99cdd0e62aae7fc43');
 INSERT INTO `tbl_tran_history` VALUES ('4a88d5fbc42744279b165e54609abda1', '04确定决策者', '666', '2021-03-31', '2021-03-14 02:18:54', '张三', '5b055a691cab4c40b0d1b87facff57d1');
 INSERT INTO `tbl_tran_history` VALUES ('5983cfa0fe2d4e5196236afdb6b7d28d', '03价值建议', '666', '2021-03-31', '2021-03-12 19:16:49', '张三', '5b055a691cab4c40b0d1b87facff57d1');
+INSERT INTO `tbl_tran_history` VALUES ('d97e340f623849549661ea0bbcffff03', '04确定决策者', '666', '2021-03-31', '2021-03-28 05:36:05', '张三', '5b055a691cab4c40b0d1b87facff57d1');
 
 -- ----------------------------
 -- Table structure for tbl_tran_remark
