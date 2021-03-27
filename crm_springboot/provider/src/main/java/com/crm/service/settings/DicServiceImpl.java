@@ -1,10 +1,12 @@
 package com.crm.service.settings;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.crm.mapper.settings.DicTypeMapper;
 import com.crm.mapper.settings.DicValueMapper;
 import com.crm.model.DicType;
 import com.crm.model.DicValue;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +16,8 @@ import java.util.Map;
  * @author Kazama
  * @create 2021-03-09-16:37
  */
+@Component
+@Service(interfaceClass = DicService.class,version="1.0",timeout = 15000)
 public class DicServiceImpl implements DicService {
     @Autowired
     private DicTypeMapper dicTypeMapper;

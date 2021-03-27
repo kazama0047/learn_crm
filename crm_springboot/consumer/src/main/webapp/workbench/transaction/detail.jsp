@@ -1,7 +1,7 @@
-<%@ page import="com.naoki.crm.settings.domain.DicValue" %>
+<%@ page import="com.crm.model.DicValue" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Map" %>
-<%@ page import="com.naoki.crm.workbench.domain.Tran" %>
+<%@ page import="com.crm.model.Tran" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath() + "/";
