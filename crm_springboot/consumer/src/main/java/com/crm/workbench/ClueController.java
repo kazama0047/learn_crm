@@ -59,7 +59,6 @@ public class ClueController {
     public ModelAndView detail(String id) {
         ModelAndView mv = new ModelAndView();
         Clue clue = clueService.detail(id);
-        System.out.println(clue.getId()+""+clue.getFullname());
         mv.addObject("c", clue);
         mv.setViewName("workbench/clue/detail");
         return mv;
